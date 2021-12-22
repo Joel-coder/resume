@@ -5,6 +5,7 @@
   background-color: #39393b;
   position: absolute;
   z-index: -1;
+  text-align: center;
 }
 
 .header-container {
@@ -29,4 +30,11 @@
   position: absolute;
   left: -2px;
   z-index: 1;
+}
+
+.sidebar-font-heading {
+  color: whitesmoke;
+  text-decoration: underline;
+  margin-top: 15px;
+  cursor: pointer;
 }
