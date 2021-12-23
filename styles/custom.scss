@@ -1,10 +1,18 @@
+$primary: #c20000;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.container-all {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .sidebar {
   top: 0;
   height: 100%;
   width: 300px;
-  background-color: #39393b;
+  background-color: #efefef;
   z-index: -1;
   text-align: center;
 }
@@ -17,7 +25,7 @@
 
 .header-name {
   top: calc((100% - 120px) / 2);
-  background-color: #c0484b;
+  background-color: #c20000;
   color: whitesmoke;
   height: 200px;
   width: 400px;
@@ -30,13 +38,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 0 16px 16px 0;
-  transition: width 2s, height 2s, font-size 2s;
+  // transition: width 2s, height 2s, font-size 2s;
 }
-.header-name:hover {
-  width: 60vw;
-  height: 200px;
-  font-size: 35px;
-}
+// .header-name:hover {
+//   width: 60vw;
+//   height: 200px;
+//   font-size: 35px;
+// }
 .avatar {
   width: 50px;
   height: 50px;
@@ -57,7 +65,7 @@
 }
 
 .sidebar-font-heading {
-  color: whitesmoke;
+  color: #969696;
   margin-top: 15px;
   cursor: pointer;
   transition: color 1s;
@@ -71,10 +79,10 @@
   position: fixed;
 }
 .card-container {
-  height: 100vh;
-  width: 100%;
+  margin-top: 15px;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -83,4 +91,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.card-bg {
+  background-color: #e7e7e7;
 }
