@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
-import "./App.scss";
-import Card from "react-bootstrap/Card";
-import "typeface-poppins";
-function App() {
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "next-i18next"; // i18n
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
+import { useRouter } from "next/router"; // i18n
+
+
+export default function LandingPage() {
+  
   return (
-    <>
+       <>
       <div className={"sidebar"}>
         <div className="header-container">
           <div className={"header-name"}>{"Joel Vargas"}</div>
@@ -24,4 +27,8 @@ function App() {
   );
 }
 
-export default App;
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["landingPage"])), // page must wait for this translation file to load
+  },
+});
