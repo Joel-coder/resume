@@ -1,22 +1,24 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 .sidebar {
   top: 0;
   height: 100%;
   width: 300px;
   background-color: #39393b;
-  position: absolute;
   z-index: -1;
   text-align: center;
 }
 
 .header-container {
   position: relative;
-  margin-top: 40px;
+  padding-top: 40px;
   height: 260px;
 }
 
 .header-name {
-  top: calc((100% - 200px) / 2);
-  background-color: #f33f4b;
+  top: calc((100% - 120px) / 2);
+  background-color: #c0484b;
+  color: whitesmoke;
   height: 200px;
   width: 400px;
   font-family: Poppins;
@@ -27,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0 16px 16px 0;
   transition: width 2s, height 2s, font-size 2s;
 }
 .header-name:hover {
@@ -55,21 +58,29 @@
 
 .sidebar-font-heading {
   color: whitesmoke;
-  text-decoration: underline;
   margin-top: 15px;
   cursor: pointer;
   transition: color 1s;
 }
 
 .sidebar-font-heading:hover {
-  color: #f33f4b;
+  color: #c0484b;
 }
 
 .test {
   position: fixed;
 }
-.container {
+.card-container {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.font-container {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
