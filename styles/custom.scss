@@ -1,7 +1,7 @@
 //$primary: #c20000;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+@import "bootstrap-icons/font/bootstrap-icons.css";
 .container-all {
   background-color: #e7e7e7;
   display: flex;
@@ -125,14 +125,18 @@
   height: 300px;
   width: 300px;
   background-color: #c0484b;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .bg-right-inner {
   height: 300px;
   width: 300px;
   background-color: white;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .middle-container {
@@ -141,6 +145,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .avatar {
@@ -149,5 +154,30 @@
   height: 100px;
   border-radius: 50%;
 }
+.line {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 20%;
+}
+.footer-left-inner {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: auto;
+}
+.subheading-left-inner {
+  font-weight: 500;
+  font-size: 1rem;
+}
 
+.bi-linkedin {
+  font-size: 20px;
+}
+
+.heading-left-inner {
+  font-size: 5rem;
+  font-weight: 600;
+}
 //create themes
+//interactivy when hover

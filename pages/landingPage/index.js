@@ -60,6 +60,12 @@ export default function LandingPage() {
           }
         >
           <div className="middle-container ">
+            <div className={"bg-left-inner"}>
+              <p className="heading-left-inner">{"Hello"}</p>
+              <p className="subheading-left-inner">
+                {"What do I do & what I am looking for?"}
+              </p>
+            </div>
             <div className={"bg-right-inner"}>
               <div className={"p-3"}>
                 <img
@@ -68,13 +74,12 @@ export default function LandingPage() {
                   class="avatar"
                 />
               </div>
-            </div>
-            <div className={"bg-left-inner"}>
-              <img
-                src="https://i.guim.co.uk/img/media/d31ebd49b32a5aa609a584ababb1e03bc70b4942/573_213_2929_1758/master/2929.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=31c49726c022c1d41ee9b9b6b7254b46"
-                alt="Avatar"
-                class="avatar"
-              />
+              <span>{"Joel Vargas"}</span>
+              <hr className={"line"} />
+              <span>{"Software Developer"}</span>
+              <div className="footer-left-inner">
+                <i class="bi bi-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
