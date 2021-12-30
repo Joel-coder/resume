@@ -5,12 +5,26 @@ import { useRouter } from "next/router"; // i18n
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-
+import Button from "react-bootstrap/Button";
 import SideBar from "../../components/Sidebar";
 
 export default function LandingPage() {
+  const [selectedColour, setSelectedColour] = useState("#c0484b");
+  const defaultColours = [
+    "#c0484b",
+    "#bad5f0",
+    "#fae4cd",
+    "#b0abcb",
+    "#e3a7c0",
+    "#f8efe6",
+    "#c2d5a8",
+    "#f0d5ba",
+  ];
+  useEffect(() => {
+    console.log(selectedColour);
+  }, [selectedColour]);
   return (
-    <div className="w-100 vh-100">
+    <>
       <Navbar bg="light" expand="md" className={"nav-bar py-3"}>
         <Container fluid>
           <Navbar.Brand href="#home" className={"ms-2"}>
@@ -29,19 +43,30 @@ export default function LandingPage() {
         </Container>
       </Navbar>
 
-      <div className={"bg-left"}></div>
+      <div
+        className={"bg-left"}
+        style={{ backgroundColor: selectedColour }}
+      ></div>
 
       <div className={"bg-right"}></div>
       <div
         className={
-          "d-flex flex-row justify-content-center align-items-center w-100 h-100"
+          "d-flex flex-row justify-content-center align-items-center w-100 vh-100 "
         }
       >
-        <div className="middle-container ">
-          <div className={"bg-left-inner p-3"}>
+        <span className="middle-container ">
+          <div
+            className={"bg-left-inner p-3"}
+            style={{ backgroundColor: selectedColour }}
+          >
             <p className="heading-left-inner">{"Hello"}</p>
             <p className="subheading-left-inner">
               {"What do I do & what I am looking for?"}
+            </p>
+            <p className="text-left-inner">
+              {
+                "You’ve always had a penchant for solving puzzles and problems—especially when it comes to technology. Not only that, but friends and family frequently come to you for help with all their tech troubles. And you’re typically the first one in line when a new gadget is released."
+              }
             </p>
           </div>
           <div className={"bg-right-inner"}>
@@ -55,13 +80,36 @@ export default function LandingPage() {
             <span className="name">{"Joel Vargas"}</span>
             <hr className={"line"} />
             <span className="role">{"Software Developer"}</span>
+            <div className="d-flex flex-row justify-content-around align-items-center w-100 h-100 px-4">
+              <div>
+                <ul className="icons">
+                  {defaultColours.map((colour, index) => (
+                    <li key={index} onClick={() => setSelectedColour(colour)}>
+                      <span
+                        className={`color border-radius ${
+                          selectedColour === colour ? "selected" : ""
+                        }`}
+                        style={{ backgroundColor: colour }}
+                      ></span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
             <div className="footer-left-inner">
-              <i class="bi bi-linkedin"></i>
+              <i
+                class="bi bi-linkedin"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/joel-vargas-2540a419a/"
+                  );
+                }}
+              ></i>
             </div>
           </div>
-        </div>
+        </span>
       </div>
-    </div>
+    </>
   );
 }
 

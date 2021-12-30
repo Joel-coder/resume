@@ -1,4 +1,4 @@
-//$primary: #c20000;
+$primary: #c0484b;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
@@ -29,9 +29,8 @@
 
 .bg-left-inner,
 .bg-right-inner {
-  height: 100%;
-  width: 100%;
-
+  height: 400px;
+  width: 50%;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -44,16 +43,18 @@
 .bg-right-inner {
   background-color: white;
 }
-.name {
-  font-size: 22px;
-  font-weight: 500;
-}
+
 .middle-container {
   max-width: 50%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .avatar {
@@ -61,7 +62,16 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: width 1s, height 1s;
 }
+
+.avatar:hover {
+  color: #0a66c2;
+  cursor: pointer;
+  width: 115px;
+  height: 115px;
+}
+
 .line {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 20%;
@@ -74,11 +84,20 @@
   justify-content: center;
   margin-top: auto;
 }
+.heading-left-inner {
+  font-size: 5rem;
+  font-weight: 600;
+}
 .subheading-left-inner {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 22px;
+  text-align: justify;
 }
-
+.text-left-inner {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+}
 .bi-linkedin {
   font-size: 25px;
   transition: color 1s;
@@ -89,14 +108,58 @@
   cursor: pointer;
 }
 
-.heading-left-inner {
-  font-size: 5rem;
-  font-weight: 600;
-}
-
 .role {
   font-size: 14px;
   font-weight: 500;
+}
+
+.icons {
+  list-style: none;
+  padding: 0;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  li {
+    float: left;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+
+    .color {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 90%;
+      width: 90%;
+      display: block;
+      &.border-radius {
+        border-radius: 50%;
+      }
+      &:hover,
+      &.selected {
+        border: 1px solid black;
+        &:before {
+          content: " ";
+          border-radius: 50%;
+          position: absolute;
+          z-index: 100;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
 }
 //create themes
 //interactivy when hover
