@@ -104,15 +104,17 @@
 
 .bg-left {
   height: 100%;
-  width: 50%;
+  width: 45%;
   background-color: #c0484b;
   position: fixed;
   z-index: -1;
+  top: 0px;
 }
 
 .bg-right {
   height: 100%;
-  width: 50%;
+  width: 55%;
+  top: 0px;
   right: 0px;
   background-color: white;
   position: fixed;
@@ -121,20 +123,31 @@
 
 .bg-left-inner {
   height: 300px;
-  width: 50%;
+  width: 300px;
   background-color: #c0484b;
 }
 
 .bg-right-inner {
   height: 300px;
-  width: 50%;
+  width: 300px;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .middle-container {
-  width: 50%;
-  height: 50%;
-  border-radius: 32px;
+  max-width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 //create themes
