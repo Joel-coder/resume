@@ -1,4 +1,4 @@
-$primary: #c20000;
+//$primary: #c20000;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -96,3 +96,27 @@ $primary: #c20000;
 .card-bg {
   background-color: #e7e7e7;
 }
+
+.nav-bar {
+  background-color: white !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-left {
+  height: 100%;
+  width: 50%;
+  background-color: #c0484b;
+  position: fixed;
+  z-index: -1;
+}
+
+.bg-right {
+  height: 100%;
+  width: 50%;
+  right: 0px;
+  //background-color: rgba(0, 0, 0, 0.19);
+  position: fixed;
+  z-index: -1;
+}
+
+//create themes
