@@ -53,8 +53,12 @@ export default function LandingPage() {
       <div className={"bg-left"}></div>
 
       <div className={"bg-right"}></div>
-
-      <Container fluid>{"klkddd"}</Container>
+      <div className="d-flex flex-row justify-content-center align-items-center h-100 ">
+        <div className="middle-container d-flex flex-row">
+          <div className={"bg-right-inner"}></div>
+          <div className={"bg-left-inner"}></div>
+        </div>
+      </div>
     </>
   );
 }

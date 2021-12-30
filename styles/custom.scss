@@ -114,9 +114,27 @@
   height: 100%;
   width: 50%;
   right: 0px;
-  //background-color: rgba(0, 0, 0, 0.19);
+  background-color: white;
   position: fixed;
   z-index: -1;
+}
+
+.bg-left-inner {
+  height: 300px;
+  width: 50%;
+  background-color: #c0484b;
+}
+
+.bg-right-inner {
+  height: 300px;
+  width: 50%;
+  background-color: white;
+}
+
+.middle-container {
+  width: 50%;
+  height: 50%;
+  border-radius: 32px;
 }
 
 //create themes
