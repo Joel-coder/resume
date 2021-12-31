@@ -180,6 +180,13 @@ body {
     }
   }
 }
+
+.box {
+  position: fixed;
+  width: 50%;
+  height: 200px;
+  background-color: red;
+}
 @keyframes example {
   0% {
     font-size: 3rem;
