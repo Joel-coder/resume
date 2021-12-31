@@ -59,7 +59,7 @@ export default function LandingPage() {
             className={"bg-left-inner p-3"}
             style={{ backgroundColor: selectedColour }}
           >
-            <p className="heading-left-inner">{"Hello"}</p>
+            <p className="heading-left-inner">{"Hello!"}</p>
             <p className="subheading-left-inner">
               {"What do I do & what I am looking for?"}
             </p>

@@ -87,6 +87,8 @@ $primary: #c0484b;
 .heading-left-inner {
   font-size: 5rem;
   font-weight: 600;
+  animation-name: example;
+  animation-duration: 6s;
 }
 .subheading-left-inner {
   font-weight: 500;
@@ -140,6 +142,7 @@ $primary: #c0484b;
       height: 90%;
       width: 90%;
       display: block;
+
       &.border-radius {
         border-radius: 50%;
       }
@@ -159,6 +162,23 @@ $primary: #c0484b;
         }
       }
     }
+  }
+}
+@keyframes example {
+  0% {
+    font-size: 5rem;
+  }
+  25% {
+    font-size: 6rem;
+  }
+  50% {
+    font-size: 5rem;
+  }
+  75% {
+    font-size: 6rem;
+  }
+  100% {
+    font-size: 5rem;
   }
 }
 //create themes
