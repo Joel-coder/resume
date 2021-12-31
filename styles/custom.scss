@@ -3,6 +3,11 @@ $primary: #c0484b;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 .nav-bar {
   background-color: white !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -87,9 +92,11 @@ $primary: #c0484b;
 .heading-left-inner {
   font-size: 5rem;
   font-weight: 600;
+  transition: color 1s;
   animation-name: example;
   animation-duration: 6s;
 }
+
 .subheading-left-inner {
   font-weight: 500;
   font-size: 22px;
@@ -187,6 +194,15 @@ $primary: #c0484b;
   }
   100% {
     font-size: 5rem;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 //create themes

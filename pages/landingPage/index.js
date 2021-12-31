@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import SideBar from "../../components/Sidebar";
+import TwoColorBackground from "../../components/TwoColorBackground";
 
 export default function LandingPage() {
   const [selectedColour, setSelectedColour] = useState("#c0484b");
