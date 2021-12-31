@@ -93,8 +93,9 @@ body {
   font-size: 5rem;
   font-weight: 600;
   transition: color 1s;
-  animation-name: example;
-  animation-duration: 6s;
+  animation: example ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .subheading-left-inner {
@@ -108,7 +109,7 @@ body {
   text-align: justify;
 }
 .bi-linkedin {
-  font-size: 25px;
+  font-size: 30px;
   transition: color 1s;
 }
 
@@ -181,17 +182,9 @@ body {
 }
 @keyframes example {
   0% {
-    font-size: 5rem;
+    font-size: 3rem;
   }
-  25% {
-    font-size: 6rem;
-  }
-  50% {
-    font-size: 5rem;
-  }
-  75% {
-    font-size: 6rem;
-  }
+
   100% {
     font-size: 5rem;
   }

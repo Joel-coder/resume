@@ -54,7 +54,7 @@ export default function LandingPage() {
           "d-flex flex-row justify-content-center align-items-center w-100 vh-100 "
         }
       >
-        <span className="middle-container ">
+        <span className="middle-container">
           <div
             className={"bg-left-inner p-3"}
             style={{ backgroundColor: selectedColour }}
