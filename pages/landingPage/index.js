@@ -72,7 +72,7 @@ export default function LandingPage() {
           <div className={"bg-right-inner"}>
             <div className={"p-3"}>
               <img
-                src="https://i.guim.co.uk/img/media/d31ebd49b32a5aa609a584ababb1e03bc70b4942/573_213_2929_1758/master/2929.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=31c49726c022c1d41ee9b9b6b7254b46"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1646265600&v=beta&t=VtKFsjL5w0b9svVrxb1_zcrrp4-lMUFRbUrdtc5sNKM"
                 alt="Avatar"
                 class="avatar"
               />
@@ -81,20 +81,7 @@ export default function LandingPage() {
             <hr className={"line"} />
             <span className="role">{"Software Developer"}</span>
             <div className="d-flex flex-row justify-content-around align-items-center w-100 h-100 px-4">
-              <div>
-                <ul className="icons">
-                  {defaultColours.map((colour, index) => (
-                    <li key={index} onClick={() => setSelectedColour(colour)}>
-                      <span
-                        className={`color border-radius ${
-                          selectedColour === colour ? "selected" : ""
-                        }`}
-                        style={{ backgroundColor: colour }}
-                      ></span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <div></div>
             </div>
             <div className="footer-left-inner">
               <i
@@ -108,6 +95,18 @@ export default function LandingPage() {
             </div>
           </div>
         </span>
+        <ul className="icons">
+          {defaultColours.map((colour, index) => (
+            <li key={index} onClick={() => setSelectedColour(colour)}>
+              <span
+                className={`color border-radius ${
+                  selectedColour === colour ? "selected" : ""
+                }`}
+                style={{ backgroundColor: colour }}
+              ></span>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );

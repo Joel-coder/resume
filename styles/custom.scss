@@ -125,13 +125,13 @@ $primary: #c0484b;
   }
 
   li {
-    float: left;
+    //float: left;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     position: relative;
     width: 35px;
     height: 35px;
-    margin: 0px 5px;
+    margin: 5px 10px;
 
     .color {
       cursor: pointer;
@@ -142,13 +142,16 @@ $primary: #c0484b;
       height: 90%;
       width: 90%;
       display: block;
-
+      transition: width 0.5s, height 0.5s;
       &.border-radius {
         border-radius: 50%;
       }
       &:hover,
       &.selected {
         border: 1px solid black;
+        width: 45px;
+        height: 45px;
+
         &:before {
           content: " ";
           border-radius: 50%;
