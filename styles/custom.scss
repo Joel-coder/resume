@@ -114,7 +114,12 @@ $primary: #c0484b;
   font-size: 14px;
   font-weight: 500;
 }
-
+.side-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  font-weight: 500;
+}
 .icons {
   list-style: none;
   padding: 0;
@@ -149,8 +154,8 @@ $primary: #c0484b;
       &:hover,
       &.selected {
         border: 1px solid black;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
 
         &:before {
           content: " ";

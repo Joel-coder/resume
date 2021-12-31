@@ -107,6 +107,7 @@ export default function LandingPage() {
             </li>
           ))}
         </ul>
+        <div className="side-text">{"Select a color to change the theme"}</div>
       </div>
     </>
   );
