@@ -209,16 +209,26 @@ body {
   width: 600px;
   height: 400px;
   margin: 50px;
+  display: flex;
+  flex-direction: row;
 }
 .inner-box {
   height: calc(100% - 20px);
-  width: 50%;
+  min-width: 50%;
   display: inline-block;
   background-color: white;
   margin: 10px;
 }
 .position-title {
   font-size: 24px;
+}
+.role-description {
+  text-align: justify;
+  margin: 10px;
+  p {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 html {
   box-sizing: border-box;

@@ -21,7 +21,8 @@ export default function Resume() {
       endDate: "May, 2021",
       country: "USA",
       description: "Description",
-      technologies: "Technologies",
+      technologies:
+        "As an analyst in the network operation center my main responsibilities are detect and troubleshoot servers, network, and software problems. In case the issue or incident correspond to another internal or external team, follow the appropriate escalation channels. Also, create custom queries as per the client requirements and provide assistance to any inquiry regarding technical matters.",
       color: colors[1],
     },
     ,
@@ -65,8 +66,11 @@ export default function Resume() {
                   </div>
 
                   <span> {profileInfo.country}</span>
-                  <span> {profileInfo.technologies}</span>
                 </div>
+              </div>
+              <div className="role-description">
+                <p className="pb-2">{"Role description"}</p>
+                <div>{profileInfo.technologies}</div>
               </div>
             </div>
           </FadeInSection>
