@@ -27,8 +27,6 @@ export default function LandingPage() {
 
   return (
     <>
-      <NavBar />
-
       <div
         className={"bg-left"}
         style={{ backgroundColor: selectedColour }}

@@ -19,7 +19,9 @@ export default function NavBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="d-flex justify-content-end w-100">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#home" onClick={() => router.push("/")}>
+                Home
+              </Nav.Link>
               <Nav.Link href="#home" onClick={() => router.push("/resume")}>
                 Resume
               </Nav.Link>
