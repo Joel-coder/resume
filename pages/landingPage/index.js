@@ -7,8 +7,37 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import NavBar from "../../components/NavBar";
-
+import API from "../api/baseApiIinstance";
 export default function LandingPage() {
+  const token =
+    "AQVsZF130ESO1hsCbTsnQWPSk_EdvkngZCVoftfvSfi4CwlOT0hDg6sZjEwUSMKOAYXM-rS8e7QJmcw89whlasmUN1H7pVZTK8WZXiUwLmp2WhwD1VzVEOJe-zPPcPPSFFZhMCE4aRfIQuuA0mPWJGlb4BMjexxm5LHXdG8hFDflhQrDoRKaeiFDeBrzo6GBFKwW2N-IYcSCcc4VNdsUytOnPUFEZZ2BCymEQzU192GK7at2VM1nwVvh0VcuMCk5CZUwB85vr1nyaNqfJPvqfZY3zNRFOH2ZfhJcQg9iRK_5hnJTaZmplBvwN7ogKXNQQ13Dpj_rT5Kyt57ET87lLioG0wFXAQ";
+
+  useEffect(() => {
+    API()
+      .get(`me/`, {
+        headers: {
+          // authorization: "Bearer " + token,
+          Authorization: `Bearer ${token}`,
+          "Access-Control-Allow-Methods": "GET",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Request-Headers":
+            "Origin, X-Requested-With, Content-Type, Accept",
+          "Content-Type": "application/x-www-form-urlencoded",
+          Accept:
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        },
+      })
+      .then(async (response) => {
+        if ((response.status = 200)) {
+          console.log("successful post request");
+          console.log("res", response.data);
+        }
+      })
+      .catch((e) => {
+        console.log("message", e);
+        //router.push("/404");
+      });
+  }, []);
   const router = useRouter();
   const [selectedColour, setSelectedColour] = useState("#c0484b");
   const defaultColours = [
@@ -79,7 +108,7 @@ export default function LandingPage() {
             </div>
           </div>
         </span>
-        <ul className="icons">
+        <ul className="icons d-none d-lg-block">
           {defaultColours.map((colour, index) => (
             <li key={index} onClick={() => setSelectedColour(colour)}>
               <span
@@ -91,7 +120,9 @@ export default function LandingPage() {
             </li>
           ))}
         </ul>
-        <div className="side-text">{"Select a color to change the theme"}</div>
+        <div className="side-text d-none d-md-block">
+          {"Select a color to change the theme"}
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 /* Borrowed from http://colours.neilorangepeel.com */
 export default [
+  "#ffe8eb",
   "whitesmoke",
   "snow",
   "tomato",

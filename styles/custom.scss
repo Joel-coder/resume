@@ -3,8 +3,8 @@ $primary: #c0484b;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-body {
-  animation: fadeInAnimation ease 3s;
+div {
+  animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -129,6 +129,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+
 .icons {
   list-style: none;
   padding: 0;
@@ -211,6 +212,7 @@ body {
   margin: 50px;
   display: flex;
   flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .inner-box {
   height: calc(100% - 20px);

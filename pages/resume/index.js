@@ -11,7 +11,7 @@ export default function Resume() {
       endDate: "Dec, 2021",
       country: "Canada",
       description: "Description",
-      technologies: "Technologies",
+      technologies: "klk",
       color: colors[0],
     },
     {
@@ -20,32 +20,33 @@ export default function Resume() {
       startDate: "Nov, 2017",
       endDate: "May, 2021",
       country: "USA",
-      description: "Description",
-      technologies:
+      description:
         "As an analyst in the network operation center my main responsibilities are detect and troubleshoot servers, network, and software problems. In case the issue or incident correspond to another internal or external team, follow the appropriate escalation channels. Also, create custom queries as per the client requirements and provide assistance to any inquiry regarding technical matters.",
+      technologies: "",
       color: colors[1],
     },
     ,
     {
-      company: "mGage a Vivial Company",
-      position: "NOC Analyst",
-      startDate: "Nov, 2017",
-      endDate: "May, 2021",
+      company: "Nexton",
+      position: "IT Talent Specialist",
+      startDate: "Jan, 2020",
+      endDate: "Feb, 2021",
       country: "USA",
-      description: "Description",
-      technologies: "Technologies",
-      color: colors[1],
+      description:
+        "I used my technical and academic background in the IT industry to analyze prospects' profiles and define a suitable opportunity for them, based on area of expertise, technologies, current and past industries.",
+      technologies: "technologies",
+      color: colors[2],
     },
-
     {
-      company: "mGage a Vivial Company",
-      position: "NOC Analyst",
-      startDate: "Nov, 2017",
-      endDate: "May, 2021",
+      company: "FDH",
+      position: "Technical Support Representative",
+      startDate: "Jul, 2017",
+      endDate: "Nov, 2017",
       country: "USA",
-      description: "Description",
+      description:
+        "My main role as a technical support specialist was to provide technical assistance to either businesses or customers that are experiencing hardware or software issues. Also, managed credentials and privileges of the user within the domain.",
       technologies: "Technologies",
-      color: colors[1],
+      color: colors[3],
     },
   ]);
 
@@ -70,7 +71,7 @@ export default function Resume() {
               </div>
               <div className="role-description">
                 <p className="pb-2">{"Role description"}</p>
-                <div>{profileInfo.technologies}</div>
+                <div>{profileInfo.description}</div>
               </div>
             </div>
           </FadeInSection>
