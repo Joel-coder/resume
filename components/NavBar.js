@@ -6,10 +6,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-export default function NavBar() {
+export default function NavBar({ children }) {
   const router = useRouter();
   return (
-    <>
+    <div>
       <Navbar bg="light" expand="md" className={"nav-bar py-3"}>
         <Container fluid>
           <Navbar.Brand href="#home" className={"ms-2"}>
@@ -31,7 +31,7 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }
 

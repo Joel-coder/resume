@@ -64,15 +64,15 @@ export default function LandingPage() {
       <div className={"bg-right"}></div>
       <div
         className={
-          "d-flex flex-row justify-content-center align-items-center w-100 vh-100 "
+          "d-flex flex-row justify-content-center align-items-center w-100 h-100"
         }
       >
-        <span className="middle-container">
+        <span className="middle-container h-100">
           <div
-            className={"bg-left-inner p-3"}
+            className={"bg-left-inner p-3 h-100 mt-3"}
             style={{ backgroundColor: selectedColour }}
           >
-            <p className="heading-left-inner">{"Hello!"}</p>
+            <p className="heading-left-inner ">{"Hello!"}</p>
             <p className="subheading-left-inner">
               {"What do I do & what I am looking for?"}
             </p>
@@ -82,8 +82,8 @@ export default function LandingPage() {
               }
             </p>
           </div>
-          <div className={"bg-right-inner"}>
-            <div className={"p-3"}>
+          <div className={"bg-right-inner h-100 mb-3"}>
+            <div className={"p-3 "}>
               <img
                 src="https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1646265600&v=beta&t=VtKFsjL5w0b9svVrxb1_zcrrp4-lMUFRbUrdtc5sNKM"
                 alt="Avatar"
@@ -93,10 +93,10 @@ export default function LandingPage() {
             <span className="name">{"Joel Vargas"}</span>
             <hr className={"line"} />
             <span className="role">{"Software Developer"}</span>
-            <div className="d-flex flex-row justify-content-around align-items-center w-100 h-100 px-4">
+            <div className="d-flex flex-row justify-content-around align-items-center w-100 h-100 px-4 h-100">
               <div></div>
             </div>
-            <div className="footer-left-inner">
+            <div className="footer-left-inner h-100">
               <i
                 class="bi bi-linkedin"
                 onClick={() => {
@@ -120,7 +120,7 @@ export default function LandingPage() {
             </li>
           ))}
         </ul>
-        <div className="side-text d-none d-md-block">
+        <div className="side-text d-none d-md-block h-100">
           {"Select a color to change the theme"}
         </div>
       </div>

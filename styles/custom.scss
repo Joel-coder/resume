@@ -34,7 +34,7 @@ div {
 
 .bg-left-inner,
 .bg-right-inner {
-  height: 400px;
+  min-height: 400px;
   width: 50%;
   flex-direction: column;
   display: flex;
@@ -126,6 +126,7 @@ div {
 .side-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  text-align: center;
   font-size: 14px;
   font-weight: 500;
 }
@@ -232,6 +233,7 @@ div {
     text-align: center;
   }
 }
+
 html {
   box-sizing: border-box;
 }
@@ -257,6 +259,21 @@ html {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .middle-container {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-left-inner,
+  .bg-right-inner {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
 //create themes
 //interactivy when hover
 //linkedin icon change to linkedin blue when hover

@@ -26,10 +26,9 @@ function MyApp({ Component, pageProps }) {
           />
           {/* scripts go here */}
         </Head>
-        <ThemeProvider theme={theme}>
-          <NavBar />
-          <Component {...pageProps} />
-        </ThemeProvider>
+
+        <NavBar />
+        <Component {...pageProps} />
       </React.Fragment>
     </GlobalStateProvider>
   );
