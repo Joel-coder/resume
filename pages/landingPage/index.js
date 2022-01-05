@@ -105,7 +105,7 @@ export default function LandingPage() {
 
             <div className="footer-left-inner">
               <i
-                class="bi bi-linkedin"
+                className="bi bi-linkedin"
                 onClick={() => {
                   window.open(
                     "https://www.linkedin.com/in/joel-vargas-2540a419a/"
