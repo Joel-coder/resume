@@ -52,30 +52,37 @@ export default function Resume() {
 
   return (
     <>
-      <div className="main-container">
-        {profileInfo.map((profileInfo, index) => (
-          <FadeInSection key={index}>
-            <div className="box" style={{ backgroundColor: profileInfo.color }}>
-              <div className="inner-box">
-                <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                  <span className="position-title">{profileInfo.company}</span>
-                  <span> {profileInfo.position}</span>
-                  <div className="d-flex flex-row">
-                    <span> {profileInfo.startDate}</span>
-                    <span className="mx-1">{"-"}</span>
-                    <span> {profileInfo.endDate}</span>
-                  </div>
+      <div className="h-100 test">
+        <div className="main-container">
+          {profileInfo.map((profileInfo, index) => (
+            <FadeInSection key={index}>
+              <div
+                className="box"
+                style={{ backgroundColor: profileInfo.color }}
+              >
+                <div className="inner-box">
+                  <div className="d-flex flex-column justify-content-center align-items-center h-100">
+                    <span className="position-title">
+                      {profileInfo.company}
+                    </span>
+                    <span> {profileInfo.position}</span>
+                    <div className="d-flex flex-row">
+                      <span> {profileInfo.startDate}</span>
+                      <span className="mx-1">{"-"}</span>
+                      <span> {profileInfo.endDate}</span>
+                    </div>
 
-                  <span> {profileInfo.country}</span>
+                    <span> {profileInfo.country}</span>
+                  </div>
+                </div>
+                <div className="role-description">
+                  <p className="pb-2">{"Role description"}</p>
+                  <div>{profileInfo.description}</div>
                 </div>
               </div>
-              <div className="role-description">
-                <p className="pb-2">{"Role description"}</p>
-                <div>{profileInfo.description}</div>
-              </div>
-            </div>
-          </FadeInSection>
-        ))}
+            </FadeInSection>
+          ))}
+        </div>
       </div>
     </>
   );

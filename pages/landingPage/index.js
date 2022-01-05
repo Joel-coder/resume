@@ -106,7 +106,7 @@ export default function LandingPage() {
             </div>
           </div>
         </span>
-        <ul className="icons d-none d-lg-block">
+        <ul className="icons d-none d-md-block">
           {defaultColours.map((colour, index) => (
             <li key={index} onClick={() => setSelectedColour(colour)}>
               <span
