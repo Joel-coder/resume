@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import NavBar from "../../components/NavBar";
 import API from "../api/baseApiIinstance";
+import Image from "next/image";
 export default function LandingPage() {
   const token =
     "AQVsZF130ESO1hsCbTsnQWPSk_EdvkngZCVoftfvSfi4CwlOT0hDg6sZjEwUSMKOAYXM-rS8e7QJmcw89whlasmUN1H7pVZTK8WZXiUwLmp2WhwD1VzVEOJe-zPPcPPSFFZhMCE4aRfIQuuA0mPWJGlb4BMjexxm5LHXdG8hFDflhQrDoRKaeiFDeBrzo6GBFKwW2N-IYcSCcc4VNdsUytOnPUFEZZ2BCymEQzU192GK7at2VM1nwVvh0VcuMCk5CZUwB85vr1nyaNqfJPvqfZY3zNRFOH2ZfhJcQg9iRK_5hnJTaZmplBvwN7ogKXNQQ13Dpj_rT5Kyt57ET87lLioG0wFXAQ";
@@ -53,6 +54,9 @@ export default function LandingPage() {
   useEffect(() => {
     console.log(selectedColour);
   }, [selectedColour]);
+  const myLoader = ({ src }) => {
+    return `${src}`;
+  };
 
   return (
     <>
@@ -84,10 +88,15 @@ export default function LandingPage() {
           </div>
           <div className={"bg-right-inner h-100"}>
             <div className={"p-3 "}>
-              <img
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1646265600&v=beta&t=VtKFsjL5w0b9svVrxb1_zcrrp4-lMUFRbUrdtc5sNKM"
+              <Image
+                width={100}
+                height={100}
+                className={"avatar"}
+                loader={myLoader}
+                src={
+                  "https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1646265600&v=beta&t=VtKFsjL5w0b9svVrxb1_zcrrp4-lMUFRbUrdtc5sNKM"
+                }
                 alt="Avatar"
-                class="avatar"
               />
             </div>
             <span className="name">{"Joel Vargas"}</span>
