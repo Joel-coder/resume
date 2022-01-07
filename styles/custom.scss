@@ -208,15 +208,15 @@ div {
 
 .box {
   width: 600px;
-  height: 400px;
+  min-height: 400px;
   margin-bottom: 50px;
-  margin-right: 0px;
+
   display: flex;
   flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .inner-box {
-  height: calc(100% - 20px);
+  min-height: calc(100% - 20px);
   min-width: 50%;
   display: inline-block;
   background-color: white;
@@ -279,6 +279,8 @@ html {
   }
   .box {
     width: 95%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
