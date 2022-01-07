@@ -23,7 +23,6 @@ export default function Project() {
         <div className=" d-flex flex-row justify-content-around w-75">
           {projectsInfo.map((info, index) => (
             <Card style={{ width: "18rem" }} className="card">
-              <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Text>{info.Description}</Card.Text>
                 <Card.Text>{info.Technologies}</Card.Text>
