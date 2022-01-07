@@ -199,7 +199,7 @@ div {
 
 .main-container {
   width: 100%;
-  padding: 1em;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +209,7 @@ div {
 .box {
   width: 600px;
   min-height: 400px;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 
   display: flex;
   flex-direction: row;
@@ -278,7 +278,7 @@ html {
     min-height: auto;
   }
   .box {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
