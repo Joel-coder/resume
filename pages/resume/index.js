@@ -10,7 +10,8 @@ export default function Resume() {
       startDate: "May, 2021",
       endDate: "Dec, 2021",
       country: "Canada",
-      description: "Description",
+      description:
+        "As a Front-End developer I worked in 2 different projects from scratch, my main responsibilities were recreate the designs provided using mainly ReactJS and test them using Jest.",
       technologies: "klk",
     },
     {
