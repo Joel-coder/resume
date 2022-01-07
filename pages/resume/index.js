@@ -59,17 +59,25 @@ export default function Resume() {
               >
                 <div className="inner-box">
                   <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                    <span className="position-title">
+                    <span className="position-title pb-5">
                       {profileInfo.company}
                     </span>
-                    <span> {profileInfo.position}</span>
-                    <div className="d-flex flex-row">
-                      <span> {profileInfo.startDate}</span>
-                      <span className="mx-1">{"-"}</span>
-                      <span> {profileInfo.endDate}</span>
+                    <span className="pb-3">
+                      {profileInfo.position}
+                      <hr className={"line w-100"} />
+                    </span>
+                    <div className="pb-3">
+                      <div className="d-flex flex-row ">
+                        <span> {profileInfo.startDate}</span>
+                        <span className="mx-1">{"-"}</span>
+                        <span> {profileInfo.endDate}</span>
+                      </div>
+                      <hr className={"line w-100"} />
                     </div>
-
-                    <span> {profileInfo.country}</span>
+                    <span>
+                      {profileInfo.country}
+                      <hr className={"line w-100"} />
+                    </span>
                   </div>
                 </div>
                 <div className="role-description">
