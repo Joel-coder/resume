@@ -131,6 +131,7 @@ $primary: #c0484b;
     clear: both;
     content: "";
     display: table;
+    //https://www.w3schools.com/css/css_float_clear.asp
   }
 
   li {
@@ -242,6 +243,8 @@ html {
   position: relative;
   bottom: 0px;
   z-index: -1;
+}
+.card {
 }
 
 div {

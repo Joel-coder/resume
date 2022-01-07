@@ -18,7 +18,9 @@ export default function NavBar({ children }) {
           <Nav className="d-flex justify-content-end w-100">
             <Nav.Link onClick={() => router.push("/")}>Home</Nav.Link>
             <Nav.Link onClick={() => router.push("/resume")}>Resume</Nav.Link>
-            <Nav.Link>Projects</Nav.Link>
+            <Nav.Link onClick={() => router.push("/projects")}>
+              Projects
+            </Nav.Link>
             <Nav.Link>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
