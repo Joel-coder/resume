@@ -100,7 +100,7 @@ export default function LandingPage() {
               />
             </div>
             <span className="name">{"Joel Vargas"}</span>
-            <hr className={"line"} />
+            <hr className={"line"} style={{ color: selectedColour }} />
             <span className="role">{"Software Developer"}</span>
 
             <div className="footer-left-inner">

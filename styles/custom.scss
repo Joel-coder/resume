@@ -3,11 +3,6 @@ $primary: #c0484b;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-div {
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 .nav-bar {
   background-color: white !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -79,7 +74,6 @@ div {
 
 .line {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 20%;
 }
 .footer-left-inner {
   background-color: white;
@@ -249,6 +243,19 @@ html {
   bottom: 0px;
   z-index: -1;
 }
+
+div {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.line {
+  animation: hrAnimation ease 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
 @keyframes example {
   0% {
     font-size: 3rem;
@@ -265,6 +272,18 @@ html {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes hrAnimation {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 10%;
   }
 }
 
@@ -287,6 +306,5 @@ html {
   }
 }
 
-//create themes
-//interactivy when hover
-//linkedin icon change to linkedin blue when hover
+//edit depending on the credentials
+//adding music
