@@ -19,10 +19,11 @@ export default function Project() {
       Technologies: "React, Bootstrap, Next, Jest, Node, Express",
     },
     {
-      Title: "Confidential",
+      Title: "Ticketing system",
       img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAAq1BMVEX///8pPkGBtKEfNzolOz4AJioVMDSrsrMmPD9xfH3m6elPXV/u7/ALLC8cNTjZ3NxFVVaIkZKepaZ3r5qRmZr19vby8/MAJChodHU3SUyBi4zP09MQLjG+w8PEycmZoaG10sePvKtcaWt3gYO0urpKWVtibnCmrK08TlDb6OPg4uLJ3tbT1tcAGyFwq5UuREaoyr0AGB6ZwbIADRTg6+fQ4twAEBUAAAu+1syr3Q39AAAJO0lEQVR4nO2aaXPiuhKGbWwJxyCbzZjFQAIEEoZcMjmTuef//7JrdWtlu+cMqaJS1c+XGW9S61Wr1WoSBARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARB3If9bH9vE74h+wOr2CG/txnfjZTFYRjGIr23Id+MSRZKssm9DflmvMSgW9y5tyHfjI7S7fnehnwzBhx0qwb3NuSbUYQywGVhcW9DvhvDEWPlw/DeZnxDipScjTilvTvnGMN01/7yri41WqRnbdDPLhtSDIu7OHWxXWaMMTFezdz+95OxqG/Ho5m51R491Ix29cNBa3wY74I13pm77aVw76FbJ776P6ar9eggG42WW1+HdPHM6/u8tTUmDLHpfTDstSr5zWZ9avuvx6dGv6bx/qruTPEze7gDo0db+w1adXMyvq14lECeFQne1WanyzKD9CuJxFjLkr5FNWU+7bAsjhOWB+1S3sm8zHYg4K1a7pdMPrTp24JX2FUScbZy9osJ4yrXq0RPjxeaLqc9wbUhySzw+PXUb2j6jR94E2ysrCw9aU4Wm+sdvMC2wW08MBiJgo/x7rqM7M24VBlYyuByyXCQItdnKTZ1WhTw0iFQiW/c0gYfuNtVJrQKacid+0K934Z2koPzLClXrunvVjVQ7glmAi0S5q0xGCvMkuji8xt3+YkIXZQA6zL0b08c3cJYjzDXt6KNbXELA62ax7pNWew3mpToWqnwHyjvRd3CxHtWjUw/RcOXTSr3Wd/PwaJKL+o92hw96O+SxLv8M3IlUMR5VrfHUZ893k24EBz9jjUd3YxnyCAyghfYzjR5kHYlWXCkW176Ckh+wuDUPGRCVNgZHzm6HWGWcXEsmhEOeo2W6j1VXAiFikBzaJbdWBbEVpPqobett4EoxLvo2tmht89nSzS/HHq6JZlg4rfUDefT1jxm8D5fHOlWxLGaC1ZlrIIL3pJjmYB/RlV3ms8nAsRlM0+3SLBICBU4mKpKPZ3TrdH/FQTNCgxW71WqEd7E641sJ365TTZ0jjBDb5knGAS20BdXrrwVRhijGw8H8/2+Caa1YECVjhetGCZieKRbF8NUlC3qvtrrTn0poIMd+Hb0gsPcS6/H4Kh1S9hmPgyK/QivM9yeH80i7cN+qnmqpwjMzxbONFq3x1arW3cFiNRudJKEnqPr0F8Y3RK2cN6eM+tgxv1wcFa3Ia786FnLu2Csa1tPoqHXmoziSrc40hF9AXoksCaGWqn+x2edvr2aLaJf76oraPIAHy3N/oaO2oP5Y7ee/TDsci//wqHbKm2BgX5tdONTrw0osyURXmC4Ux9b3dDceGy/6qlABWGa2/kHf5VhW+2nYeo/wlD6rv1Lp21Ds271zgBbXNtucDiz46/YFeosRIX95dqmvDjGaG2AxRyttG7Zwm9jXWldzfaq7LK64ZCFL7gkV02azjYwC4nWLXOy5jVOoAx+fRvONE92a+ho7dVY0HGlA06tpDcx1ftpxcy5YKR2NQNmxc9aFd47agRyWfQlXNNlfqwbJn5nCr+oRZjpviqVGrbP6IYaS9/87JtFadBL913vDHIHxZIzDkjOmruEb6Jrtsj6tICCPB/lWYiMKxd0w0mVMWkIBpvQaHRTjnqmgDng5zqTKc6pbm3j7o9mTTq8m5sYWeodFJWOVhH+ExTnB/AnLOzJIKnGMnYcThMt6PaibgWeEFom6uplYHRTntI87b6bnddtelm3Wv0PVOjRa+pVOWGh3KpeIWpLS3EJVcq7b94VgHxTcu1hsdjp7C3mPhW/qJtKMurVCUHeLkej286ssPO6JUed8Z9X/K3WrXG6TOvpU7oNzdaWoz0tlY1UsyUEvlHwNaSDMVPTLqMUxPB4s276rC/r1lbLYYZxxdQtjG64rUVnahDgocnhqK/mtvgnun1e0k31jNFNujmmMC+R8uUvI5+oA1V92EYnX55565Ju+EntaHDECs1tuy9AOpvEJx8GKDU/09m/9rehXadBE/MeGJLMwXHBxto1vpACY0C2Un2WZwqFF3XbqYT4aDVa3bBxb6H23CbPlNb+QXx79z7QmyyMxp6kIR/J7fWX7Aq1MeZ/uOks9aJyc0OVF1/UDU99iK3gOLqp445znB6Vy8K842UGOaaS13R7dCQyfJiTVqBXANgDxo9NkiC+pITdY6YWqHVTZxNhs4bBX2j9Zd2mZj65k2w459MYN2mmttTdM6/PqjLQ4GE4s2FhXrp1pPO66a3z0THhV9/dZPfaoBjDxlbnO1+zK+xYLDpNmX2k6DLy/K6KS2Kjjvv1IVyA+Zd1s0mfu8k7uq3VOKp40lz3WlCLS6AemmDxRRWV8xELM/jimm7mvGB3Bl1X0kcI7WAqaTTVFQb9FN1t75afwzuRzDjq3TRWdRpodqKKF2K8mmwyKCuCcFd003UH749o3PrbRk14Io8GakzJz530L/QLEY8mDwcwI5MFpqu66XKI8bhPpyACaAcrVWVQRRK1K0yK9bT4c+EWujqVqFw3wjXS0mlJlOEPAmH8ll7VTc+vU8A8qvd2TjLcpIS5HyhXTExn4Vvz/+hWmPpH4/3H6+ej+aGhrw/6amcwVXo1sWh8OisWg2D7xz+DjYV/NogyVX1oVaH/gMsj5zXd8EzoRw9Pt+KkTaa2m8FRKTgu5b57VbfghxGq/58aU4D7MG9jycKeUXBOGOwKu3kxWt2gW9DLuD2N1ucsU7QZsMwOJmIb6O6abmiXX3/2f5eRbTriiGfjmjPXiliMoZHruqkfZfqNx9dhUfz6WzuclUKVPswNSOH0vHaDfB84Tf9rim2HVfLnuoiz2BUkXVWCw498FduoDDv9r6h5W5xtafEmBGt5t8asfp3ZmnQ60W1y1nFTtqIXMp75D9q/oTMnXqru1XA/+rWv2cxX/ibYb7gnz0Pde2mzqfyv+uPfOqPqTueTG4+p6XrwsNysesfHj2K+WG2WD4OZab/IgfN/d1rs60d+boSvuxEvwDa765M29tvJZjnqrndHX7sv+nf+/nj3FtrxdZr7BsHH9soziyAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIl/8BDpyav/+CSoAAAAAASUVORK5CYII=",
-      Description: "ticketing system",
-      Technologies: "React, Bootstrap, Next, Jest, Node, Express",
+      Description:
+        "When I was working as a NOC analyst, Service Now ticketing system was being used to distribute the work among the colleagues, but the NOC operates with three shifts; morning shift, afternoon shift and night shift. Therefore, when every shifts starts the tickets needed to be manually share among the people in the entering shift, so they can continue working on the tickets that were not completed by the previous shift. I decided to create a solution to overcome this manual process. This program makes a get request to Service Now API to obtain the pending tickets and distribute them by category (follow up, alerts, pending for troubleshooting) among to people in the current shift.",
+      Technologies: "Python, CSS",
     },
     {
       Title: "Confidential",
@@ -39,8 +40,11 @@ export default function Project() {
             <div className="child-card h-100" key={index}>
               <Card style={{ width: "18rem" }} className="h-100 mt-4 mb-3">
                 <Card.Img variant="top" src={info.img} />
+
                 <Card.Body>
+                  <Card.Title>{info.Title}</Card.Title>
                   <Card.Text>{info.Description}</Card.Text>
+                  <span>{"Technologies"}</span>
                   <Card.Text>{info.Technologies}</Card.Text>
                 </Card.Body>
               </Card>

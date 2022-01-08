@@ -254,6 +254,9 @@ html {
   justify-content: center;
   align-items: center;
 }
+.card-text {
+  text-align: justify !important;
+}
 div {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
