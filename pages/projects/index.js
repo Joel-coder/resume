@@ -16,19 +16,30 @@ export default function Project() {
       Description: "website for renting vessels",
       Technologies: "React, Bootstrap, Next, Jest, Node, Express",
     },
+    {
+      Title: "Confidential",
+      Description: "ticketing system",
+      Technologies: "React, Bootstrap, Next, Jest, Node, Express",
+    },
   ];
   return (
     <>
-      <div className=" d-flex flex-row justify-content-center align-items-center vh-100">
-        <div className=" d-flex flex-row justify-content-around w-75">
+      <div className=" ">
+        <div className="w-100 h-100 parent-card">
           {projectsInfo.map((info, index) => (
-            <Card style={{ width: "18rem" }} className="card" key={index}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Text>{info.Description}</Card.Text>
-                <Card.Text>{info.Technologies}</Card.Text>
-              </Card.Body>
-            </Card>
+            <div className="child-card h-100">
+              <Card
+                style={{ width: "18rem" }}
+                key={index}
+                className="h-100 mt-5"
+              >
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                  <Card.Text>{info.Description}</Card.Text>
+                  <Card.Text>{info.Technologies}</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

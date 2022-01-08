@@ -244,9 +244,16 @@ html {
   bottom: 0px;
   z-index: -1;
 }
-.card {
+.parent-card {
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.child-card {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 div {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -306,6 +313,17 @@ div {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .parent-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .child-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
