@@ -21,18 +21,19 @@ export default function Project() {
       Description: "ticketing system",
       Technologies: "React, Bootstrap, Next, Jest, Node, Express",
     },
+    {
+      Title: "Confidential",
+      Description: "Survey System",
+      Technologies: "React, Bootstrap, Next, Jest, Node, Express",
+    },
   ];
   return (
     <>
       <div className=" ">
         <div className="w-100 h-100 parent-card">
           {projectsInfo.map((info, index) => (
-            <div className="child-card h-100">
-              <Card
-                style={{ width: "18rem" }}
-                key={index}
-                className="h-100 mt-5"
-              >
+            <div className="child-card h-100" key={index}>
+              <Card style={{ width: "18rem" }} className="h-100 mt-4 mb-3">
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                   <Card.Text>{info.Description}</Card.Text>
