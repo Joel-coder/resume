@@ -53,10 +53,7 @@ export default function Resume() {
         <div className="main-container">
           {profileInfo.map((profileInfo, index) => (
             <FadeInSection key={index}>
-              <div
-                className="box"
-                style={{ backgroundColor: profileInfo.color }}
-              >
+              <div className="box">
                 <div className="inner-box">
                   <div className="d-flex flex-column justify-content-center align-items-center h-100">
                     <span className="position-title pb-5">
