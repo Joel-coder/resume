@@ -51,7 +51,9 @@ export default function Project() {
                 <Card.Body>
                   <Card.Title className="pb-2">{info.Title}</Card.Title>
                   <Card.Text>{info.Description}</Card.Text>
-                  <span>{"Technologies"}</span>
+                  <span className={"font-weight-bold mb-2"}>
+                    {"Technologies"}
+                  </span>
                   <Card.Text>{info.Technologies}</Card.Text>
                 </Card.Body>
               </Card>
