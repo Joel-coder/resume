@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useTranslation } from "next-i18next"; // i18n
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
 import { useRouter } from "next/router"; // i18n
@@ -9,10 +9,12 @@ import Button from "react-bootstrap/Button";
 import NavBar from "../../components/NavBar";
 import API from "../api/baseApiIinstance";
 import Image from "next/image";
+import ColorPalette from "../../components/ColorPalette";
+import { Context } from "../../components/Context";
 export default function LandingPage() {
   const token =
     "AQVsZF130ESO1hsCbTsnQWPSk_EdvkngZCVoftfvSfi4CwlOT0hDg6sZjEwUSMKOAYXM-rS8e7QJmcw89whlasmUN1H7pVZTK8WZXiUwLmp2WhwD1VzVEOJe-zPPcPPSFFZhMCE4aRfIQuuA0mPWJGlb4BMjexxm5LHXdG8hFDflhQrDoRKaeiFDeBrzo6GBFKwW2N-IYcSCcc4VNdsUytOnPUFEZZ2BCymEQzU192GK7at2VM1nwVvh0VcuMCk5CZUwB85vr1nyaNqfJPvqfZY3zNRFOH2ZfhJcQg9iRK_5hnJTaZmplBvwN7ogKXNQQ13Dpj_rT5Kyt57ET87lLioG0wFXAQ";
-
+  const [selectedColour, setSelectedColour] = useContext(Context);
   useEffect(() => {
     API()
       .get(`me/`, {
@@ -40,20 +42,7 @@ export default function LandingPage() {
       });
   }, []);
   const router = useRouter();
-  const [selectedColour, setSelectedColour] = useState("#c0484b");
-  const defaultColours = [
-    "#c0484b",
-    "#bad5f0",
-    "#fae4cd",
-    "#b0abcb",
-    "#e3a7c0",
-    "#f8efe6",
-    "#c2d5a8",
-    "#f0d5ba",
-  ];
-  useEffect(() => {
-    console.log(selectedColour);
-  }, [selectedColour]);
+
   const myLoader = ({ src }) => {
     return `${src}`;
   };
@@ -115,18 +104,7 @@ export default function LandingPage() {
             </div>
           </div>
         </span>
-        <ul className="icons d-none d-md-block">
-          {defaultColours.map((colour, index) => (
-            <li key={index} onClick={() => setSelectedColour(colour)}>
-              <span
-                className={`color border-radius ${
-                  selectedColour === colour ? "selected" : ""
-                }`}
-                style={{ backgroundColor: colour }}
-              ></span>
-            </li>
-          ))}
-        </ul>
+
         <div className="side-text d-none d-md-block h-100">
           {"Select a color to change the theme"}
         </div>

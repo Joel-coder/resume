@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 //import colors from "./css-colors";
 import FadeInSection from "../../components/FadeInSection";
-
+import { Context } from "../../components/Context";
 export default function Resume() {
+  const [selectedColour, setSelectedColour] = useContext(Context);
   const [profileInfo, setProfileInfo] = useState([
     {
       company: "Centennial College",
@@ -53,7 +54,7 @@ export default function Resume() {
         <div className="main-container">
           {profileInfo.map((profileInfo, index) => (
             <FadeInSection key={index}>
-              <div className="box">
+              <div className="box" style={{ backgroundColor: selectedColour }}>
                 <div className="inner-box">
                   <div className="d-flex flex-column justify-content-center align-items-center h-100">
                     <span className="position-title pb-5">

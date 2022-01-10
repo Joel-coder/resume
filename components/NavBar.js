@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import { useTranslation } from "next-i18next"; // i18n
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
 import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-
-export default function NavBar({ children }) {
+import { Context } from "../components/Context";
+export default function NavBar() {
   const router = useRouter();
+  const countRef = useRef("");
+
   return (
     <Navbar bg="light" expand="md" className={"nav-bar py-3"}>
       <Container fluid>
