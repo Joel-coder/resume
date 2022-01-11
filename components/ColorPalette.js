@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Context } from "../../resume/Context";
+import { Context } from "../Context";
 export default function ColorPalette() {
   const router = useRouter();
 

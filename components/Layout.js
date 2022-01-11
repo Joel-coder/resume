@@ -14,9 +14,8 @@ import { Context } from "../Context";
 var colors = "#c0484b";
 export default function LayOut({ children }) {
   const [selectedColour, setSelectedColour] = useState(colors);
-  useEffect(() => {
-    colors = selectedColour;
-  }, [selectedColour]);
+
+  colors = selectedColour;
 
   return (
     <>
