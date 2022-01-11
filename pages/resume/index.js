@@ -53,6 +53,12 @@ export default function Resume() {
   return (
     <>
       <div className="h-100 test">
+        <div
+          className={"bg-left"}
+          style={{ backgroundColor: selectedColour }}
+        ></div>
+
+        <div className={"bg-right"}></div>
         <div className="main-container">
           {profileInfo.map((profileInfo, index) => (
             <FadeInSection key={index}>

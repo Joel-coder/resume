@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Context } from "../../Context";
 //import colors from "./css-colors";
 
 export default function Project() {
+  const value = useContext(Context);
+  const { selectedColour, setSelectedColour } = value;
   const projectsInfo = [
     {
       Title: "Ads campaigns CRM",
@@ -41,6 +44,12 @@ export default function Project() {
   ];
   return (
     <>
+      <div
+        className={"bg-left"}
+        style={{ backgroundColor: selectedColour }}
+      ></div>
+
+      <div className={"bg-right"}></div>
       <div className=" ">
         <div className="w-100 h-100 parent-card">
           {projectsInfo.map((info, index) => (

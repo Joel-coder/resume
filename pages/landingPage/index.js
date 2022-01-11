@@ -81,7 +81,7 @@ export default function LandingPage() {
             </div>
           </div>
         </span>
-
+        <ColorPalette />
         <div className="side-text d-none d-md-block h-100">
           {"Select a color to change the theme"}
         </div>

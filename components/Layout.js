@@ -26,7 +26,7 @@ export default function LayOut({ children }) {
         }}
       >
         <NavBar />
-        <ColorPalette />
+
         {children}
       </Context.Provider>
     </>
