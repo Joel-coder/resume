@@ -20,7 +20,7 @@ export default function LandingPage() {
   useEffect(() => {}, []);
   const router = useRouter();
 
-  const myLoader = ({ src }) => {
+  const myLoader = ({ src, width, quality }) => {
     return `${src}`;
   };
 
@@ -37,7 +37,7 @@ export default function LandingPage() {
           "d-flex flex-row justify-content-center align-items-center w-100 h-100"
         }
       >
-        <span className="middle-container my-3 h-100">
+        <span className="middle-container my-3 h-100 ">
           <div
             className={"bg-left-inner p-3"}
             style={{ backgroundColor: selectedColour }}
