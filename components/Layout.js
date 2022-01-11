@@ -11,10 +11,13 @@ import { useRouter } from "next/router";
 import NavBar from "../components/NavBar";
 import ColorPalette from "../components/ColorPalette";
 import { Context } from "../Context";
-var colors = "";
+var colors = "#c0484b";
 export default function LayOut({ children }) {
   const [selectedColour, setSelectedColour] = useState(colors);
-  colors = selectedColour;
+  useEffect(() => {
+    colors = selectedColour;
+  }, [selectedColour]);
+
   return (
     <>
       <Context.Provider

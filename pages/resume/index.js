@@ -5,9 +5,7 @@ import { Context } from "../../Context";
 export default function Resume() {
   const value = useContext(Context);
   const { selectedColour, setSelectedColour } = value;
-  useEffect(() => {
-    console.log("testing", selectedColour);
-  }, [selectedColour]);
+
   const [profileInfo, setProfileInfo] = useState([
     {
       company: "Centennial College",
