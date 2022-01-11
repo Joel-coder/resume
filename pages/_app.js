@@ -12,12 +12,11 @@ function MyApp({ Component, pageProps }) {
     <GlobalStateProvider>
       <React.Fragment>
         <Head>
-          <title>EXAMPLE TITLE</title>
+          <title>Joel Vargas Portfolio</title>
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width"
           />
-          {/* scripts go here */}
         </Head>
 
         <Layout>

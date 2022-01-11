@@ -32,8 +32,9 @@ export default function Project() {
     {
       Title: "Survey System",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQngzO6qgta3WUUP5bBrK4iNN_Pp_4ojk5-FQ&usqp=CAU",
-      Description: "",
-      Technologies: "Bootstrap, Jest, Node, Express",
+      Description:
+        "This application allow the user to perform a CRUD(Create, Read, Update and delete) information that was inserted in the survey, but in order to do that it needs to be authenticated",
+      Technologies: "Bootstrap, Jest, Node, Express, Passport, React, MongoDB",
     },
     {
       Title: "Calendar",
