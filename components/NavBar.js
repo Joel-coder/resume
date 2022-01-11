@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Context } from "../components/Context";
 export default function NavBar() {
   const router = useRouter();
   const countRef = useRef("");

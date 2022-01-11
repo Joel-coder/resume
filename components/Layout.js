@@ -1,15 +1,28 @@
-import React, { createContext, useContext, useState } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useRef,
+  useEffect,
+} from "react";
 import { useTranslation } from "next-i18next"; // i18n
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
 import { useRouter } from "next/router";
 import NavBar from "../components/NavBar";
 import ColorPalette from "../components/ColorPalette";
-import { Context } from "./Context";
+import { Context } from "../Context";
+var colors = "";
 export default function LayOut({ children }) {
-  const [selectedColour, setSelectedColour] = useState("#c0484b");
+  const [selectedColour, setSelectedColour] = useState(colors);
+  colors = selectedColour;
   return (
     <>
-      <Context.Provider value={[selectedColour, setSelectedColour]}>
+      <Context.Provider
+        value={{
+          selectedColour: selectedColour,
+          setSelectedColour: setSelectedColour,
+        }}
+      >
         <NavBar />
         <ColorPalette />
         {children}

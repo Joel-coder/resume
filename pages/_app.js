@@ -6,8 +6,8 @@ import theme from "../src/theme";
 import GlobalStateProvider from "../store/globalStateProvider";
 import { appWithTranslation } from "next-i18next";
 import Layout from "../components/Layout";
-let count = 0;
 function MyApp({ Component, pageProps }) {
+  let count = 0;
   return (
     <GlobalStateProvider>
       <React.Fragment>

@@ -5,11 +5,14 @@ import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Context } from "./Context";
+import { Context } from "../../resume/Context";
 export default function ColorPalette() {
   const router = useRouter();
-  const countRef = useRef("");
-  const [selectedColour, setSelectedColour] = useContext(Context);
+
+  const value = useContext(Context);
+
+  let { selectedColour, setSelectedColour } = value;
+
   const defaultColours = [
     "#c0484b",
     "#bad5f0",
@@ -20,6 +23,9 @@ export default function ColorPalette() {
     "#c2d5a8",
     "#f0d5ba",
   ];
+  useEffect(() => {
+    console.log("klk");
+  }, []);
   return (
     <>
       <ul className="icons d-none d-md-block">

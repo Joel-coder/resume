@@ -1,9 +1,13 @@
 import React, { useEffect, useState, useContext } from "react";
 //import colors from "./css-colors";
 import FadeInSection from "../../components/FadeInSection";
-import { Context } from "../../components/Context";
+import { Context } from "../../Context";
 export default function Resume() {
-  const [selectedColour, setSelectedColour] = useContext(Context);
+  const value = useContext(Context);
+  const { selectedColour, setSelectedColour } = value;
+  useEffect(() => {
+    console.log("testing", selectedColour);
+  }, [selectedColour]);
   const [profileInfo, setProfileInfo] = useState([
     {
       company: "Centennial College",
