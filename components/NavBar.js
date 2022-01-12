@@ -18,10 +18,10 @@ export default function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="d-flex justify-content-end w-100">
             <Nav.Link onClick={() => router.push("/")}>Home</Nav.Link>
-            <Nav.Link onClick={() => router.push("/Experience")}>
-              Resume
+            <Nav.Link onClick={() => router.push("/resume")}>
+              Experience
             </Nav.Link>
-            <Nav.Link onClick={() => router.push("/Projects")}>
+            <Nav.Link onClick={() => router.push("/projects")}>
               Projects
             </Nav.Link>
           </Nav>
