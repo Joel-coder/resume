@@ -17,14 +17,15 @@ var colors = "#fae4cd";
 export default function LayOut({ children }) {
   const [selectedColour, setSelectedColour] = useState(colors);
   const [cookies, setCookie] = useCookies(["user"]);
-  colors = selectedColour;
+
+  cookies.color ? (colors = cookies.color) : (colors = selectedColour);
+
   useEffect(() => {
     setCookie("color", selectedColour, {
       path: "/",
       secure: true,
       sameSite: "none",
     });
-    console.log(cookies);
   }, [selectedColour]);
 
   return (
