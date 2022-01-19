@@ -7,7 +7,9 @@ import { Context } from "../../Context";
 export default function Project() {
   const value = useContext(Context);
   const { selectedColour, setSelectedColour } = value;
+  //spread operator to include the elements/objects of the json in a array
   const projectsInfo = [...projectsInfoJSON];
+
   return (
     <>
       <div
