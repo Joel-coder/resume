@@ -1,13 +1,6 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "next-i18next"; // i18n
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
-import { useRouter } from "next/router"; // i18n
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import NavBar from "../../components/NavBar";
-import API from "../api/baseApiIinstance";
 import Image from "next/image";
 import ColorPalette from "../../components/ColorPalette";
 import { Context } from "../../Context";
@@ -17,9 +10,6 @@ export default function LandingPage() {
     "AQVsZF130ESO1hsCbTsnQWPSk_EdvkngZCVoftfvSfi4CwlOT0hDg6sZjEwUSMKOAYXM-rS8e7QJmcw89whlasmUN1H7pVZTK8WZXiUwLmp2WhwD1VzVEOJe-zPPcPPSFFZhMCE4aRfIQuuA0mPWJGlb4BMjexxm5LHXdG8hFDflhQrDoRKaeiFDeBrzo6GBFKwW2N-IYcSCcc4VNdsUytOnPUFEZZ2BCymEQzU192GK7at2VM1nwVvh0VcuMCk5CZUwB85vr1nyaNqfJPvqfZY3zNRFOH2ZfhJcQg9iRK_5hnJTaZmplBvwN7ogKXNQQ13Dpj_rT5Kyt57ET87lLioG0wFXAQ";
   const value = useContext(Context);
   const { selectedColour, setSelectedColour } = value;
-  useEffect(() => {}, []);
-  const router = useRouter();
-
   const myLoader = ({ src, width, quality }) => {
     return `${src}`;
   };
