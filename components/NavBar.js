@@ -8,6 +8,10 @@ import Container from "react-bootstrap/Container";
 export default function NavBar() {
   const router = useRouter();
   const countRef = useRef("");
+  var jsonobj =
+    '{ "name":"Brendan Eich","designerof":"Javascript","bornin":"1961" }';
+
+  // Here we convert JSON to object
 
   return (
     <Navbar bg="light" expand="md" className={"nav-bar py-3"}>
