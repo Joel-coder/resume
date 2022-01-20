@@ -1,30 +1,16 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useRef,
-  useEffect,
-} from "react";
-import { useTranslation } from "next-i18next"; // i18n
-import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
-import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
-import ColorPalette from "../components/ColorPalette";
 import { Context } from "../Context";
 import { useCookies } from "react-cookie";
 
-const CookiesProvider = (e) => {
-  e;
-};
-
 export default function LayOut({ children }) {
   const [cookies, setCookie] = useCookies(["color"]);
-  const [selectedColour, setSelectedColour] = useState("");
-  var colors = "#fae4cd";
+  const [selectedColour, setSelectedColour] = useState(undefined);
+  var defaultColor = "#fae4cd";
   useEffect(() => {
     cookies.color
       ? setSelectedColour(cookies.color)
-      : setSelectedColour(colors);
+      : setSelectedColour(defaultColor);
   }, []);
 
   useEffect(() => {
@@ -34,7 +20,6 @@ export default function LayOut({ children }) {
       sameSite: "none",
       maxAge: 3600,
     });
-
     console.log(cookies.color);
   }, [selectedColour]);
 
@@ -47,15 +32,8 @@ export default function LayOut({ children }) {
         }}
       >
         <NavBar />
-
         {children}
       </Context.Provider>
     </>
   );
 }
-
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["landingPage"])), // page must wait for this translation file to load
-  },
-});
