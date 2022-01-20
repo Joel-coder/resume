@@ -13,19 +13,29 @@ import ColorPalette from "../components/ColorPalette";
 import { Context } from "../Context";
 import { useCookies } from "react-cookie";
 
-var colors = "#fae4cd";
-export default function LayOut({ children }) {
-  const [selectedColour, setSelectedColour] = useState(colors);
-  const [cookies, setCookie] = useCookies(["user"]);
+const CookiesProvider = (e) => {
+  e;
+};
 
-  cookies.color ? (colors = cookies.color) : (colors = selectedColour);
+export default function LayOut({ children }) {
+  const [cookies, setCookie] = useCookies(["color"]);
+  const [selectedColour, setSelectedColour] = useState("");
+  var colors = "#fae4cd";
+  useEffect(() => {
+    cookies.color
+      ? setSelectedColour(cookies.color)
+      : setSelectedColour(colors);
+  }, []);
 
   useEffect(() => {
     setCookie("color", selectedColour, {
       path: "/",
       secure: true,
       sameSite: "none",
+      maxAge: 3600,
     });
+
+    console.log(cookies.color);
   }, [selectedColour]);
 
   return (
