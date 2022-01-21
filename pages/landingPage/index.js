@@ -69,7 +69,7 @@ export default function LandingPage() {
                 }}
               ></i>
               <a
-                class="bi bi-file-person-fill ms-2"
+                className="bi bi-file-person-fill ms-2"
                 href="assets/Joel_Vargas.pdf"
               ></a>
             </div>
