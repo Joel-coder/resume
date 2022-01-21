@@ -103,11 +103,22 @@ $primary: #c0484b;
   text-align: justify;
 }
 .bi-linkedin {
+  color: black;
+  font-size: 30px;
+  transition: color 1s;
+}
+
+.bi-file-person-fill {
+  color: black;
   font-size: 30px;
   transition: color 1s;
 }
 
 .bi-linkedin:hover {
+  color: #0a66c2;
+  cursor: pointer;
+}
+.bi-file-person-fill:hover {
   color: #0a66c2;
   cursor: pointer;
 }
@@ -341,3 +352,4 @@ div {
 //add a reade me
 //add a modal describing the intentions of this website
 //download CV
+//add remove color
