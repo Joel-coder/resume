@@ -52,7 +52,7 @@ export default function Resume() {
 
   return (
     <>
-      <div className="h-100 test">
+      <div className="h-100 resume-container">
         <div
           className={"bg-left"}
           style={{ backgroundColor: selectedColour }}
