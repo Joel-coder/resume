@@ -4,8 +4,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"; //
 import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import { Context } from "../Context";
+
 export default function ColorPalette() {
   const router = useRouter();
 
@@ -23,14 +23,17 @@ export default function ColorPalette() {
     "#c2d5a8",
     "#f0d5ba",
   ];
-  useEffect(() => {
-    console.log("klk");
-  }, []);
+
   return (
     <>
       <ul className="icons d-none d-md-block">
         {defaultColours.map((colour, index) => (
-          <li key={index} onClick={() => setSelectedColour(colour)}>
+          <li
+            key={index}
+            onClick={() => {
+              setSelectedColour(colour);
+            }}
+          >
             <span
               className={`color border-radius ${
                 selectedColour === colour ? "selected" : ""
