@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
 import { Context } from "../Context";
 import { useCookies } from "react-cookie";
-var defaultColor = "#fae4cd";
-export default function LayOut({ children }) {
-  const [cookies, setCookie] = useCookies(["color"]);
-  const [selectedColour, setSelectedColour] = useState(undefined);
 
+export default function LayOut({ children }) {
+  const [cookies, setCookie] = useCookies(["user"]);
+  const [selectedColour, setSelectedColour] = useState(undefined);
+  var defaultColor = "#fae4cd";
   useEffect(() => {
     cookies.color
       ? setSelectedColour(cookies.color)
       : setSelectedColour(defaultColor);
   }, []);
-  defaultColor = selectedColour;
+
   useEffect(() => {
     setCookie("color", selectedColour, {
       path: "/",
-      secure: true,
+      secure: false,
       sameSite: "none",
       maxAge: 3600,
     });
