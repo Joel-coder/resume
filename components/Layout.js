@@ -16,8 +16,6 @@ export default function LayOut({ children }) {
   useEffect(() => {
     setCookie("color", selectedColour, {
       path: "/",
-      secure: false,
-      sameSite: "none",
       maxAge: 3600,
     });
     console.log(cookies.color);
