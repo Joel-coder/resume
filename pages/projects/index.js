@@ -41,3 +41,10 @@ export default function Project() {
     </>
   );
 }
+
+/*export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["projects"])), // page must wait for this translation file to load
+  },
+});
+*/

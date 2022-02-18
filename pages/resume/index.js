@@ -4,8 +4,7 @@ import FadeInSection from "../../components/FadeInSection";
 import { Context } from "../../Context";
 export default function Resume() {
   const value = useContext(Context);
-  const { selectedColour, setSelectedColour } = value;
-
+  const { selectedColour } = value;
   const [profileInfo, setProfileInfo] = useState([
     {
       company: "Centennial College",
@@ -98,3 +97,8 @@ export default function Resume() {
     </>
   );
 }
+/*export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["resume"])), // page must wait for this translation file to load
+  },
+});*/
