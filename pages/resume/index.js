@@ -48,7 +48,8 @@ export default function Resume() {
       technologies: "Technologies",
     },
   ]);
-
+  const array = [...profileInfo, { company: "0" }];
+  console.log(array);
   return (
     <>
       <div className="h-100 resume-container">
