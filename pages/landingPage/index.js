@@ -47,12 +47,11 @@ export default function LandingPage() {
                 height={100}
                 className={"avatar"}
                 loader={myLoader}
-                src={
-                  "https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1656547200&v=beta&t=xNKPRs10HMS-DGUvmeEnkvzbNojXZk-HZTZkNyNH5i4"
-                }
+                src={"/assets/images/1613929200670.jpg"}
                 alt="Avatar"
               />
             </div>
+
             <span className="name">{"Joel Vargas"}</span>
             <hr className={"line"} style={{ color: selectedColour }} />
             <span className="role">{"Software Developer"}</span>
