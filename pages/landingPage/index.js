@@ -48,7 +48,7 @@ export default function LandingPage() {
                 className={"avatar"}
                 loader={myLoader}
                 src={
-                  "https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1646265600&v=beta&t=VtKFsjL5w0b9svVrxb1_zcrrp4-lMUFRbUrdtc5sNKM"
+                  "https://media-exp1.licdn.com/dms/image/C4E03AQGr5cpe10CWFQ/profile-displayphoto-shrink_200_200/0/1613929200670?e=1656547200&v=beta&t=xNKPRs10HMS-DGUvmeEnkvzbNojXZk-HZTZkNyNH5i4"
                 }
                 alt="Avatar"
               />
