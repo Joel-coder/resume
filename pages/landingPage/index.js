@@ -45,7 +45,7 @@ export default function LandingPage() {
               <Image
                 width={100}
                 height={100}
-                className={"avatars"}
+                className={"avatar"}
                 loader={myLoader}
                 src={"/assets/images/1613929200670.jpg"}
                 alt="Avatar"
