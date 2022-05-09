@@ -5,7 +5,7 @@ const BASE_URL = "https://orbbit-dev.cf:3000/api/";
 const ApiInstance = () => {
   axios.interceptors.request.use(
     (request) => {
-      console.log("Axios Request: ", request);
+      //   console.log("Axios Request: ", request);
     },
     function (error) {
       return Promise.reject(error);

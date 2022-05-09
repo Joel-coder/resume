@@ -7,6 +7,7 @@ export default function LayOut({ children }) {
   const [cookies, setCookie] = useCookies(["user"]);
   const [selectedColour, setSelectedColour] = useState(undefined);
   var defaultColor = "#fae4cd";
+
   useEffect(() => {
     cookies.color
       ? setSelectedColour(cookies.color)
@@ -20,6 +21,7 @@ export default function LayOut({ children }) {
       //sameSite: "none",
       maxAge: 3600,
     });
+    console.log("render test");
   }, [selectedColour]);
 
   return (

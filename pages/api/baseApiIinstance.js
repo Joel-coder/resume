@@ -6,7 +6,7 @@ const ORRBIT_BASE_URL = "https://api.linkedin.com/v2/";
 export const BaseApiInstance = () => {
   axios.interceptors.request.use(
     (request) => {
-      console.log("Axios Request : ", request);
+      //  console.log("Axios Request : ", request);
     },
     function (error) {
       return Promise.reject(error);
