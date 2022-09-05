@@ -1,5 +1,15 @@
 [
 {
+    "company": "Freelancer",
+    "position": "Front-end Developer",
+    "startDate": "Jan, 2021",
+    "endDate": "Present",
+    "country": "Canada",
+    "description":
+          "Worked with different clients in the retail and wholesale business, maintaining and enhancing the UIs of their platform",
+    "technologies": ""
+},
+{
     "company": "Centennial College",
     "position": "Front-end Developer",
     "startDate": "May, 2021",
@@ -11,7 +21,7 @@
   },
   {
     "company": "mGage a Vivial Company",
-    "position": "NOC Analyst",
+    "position": "NOC Analyst - System Engineer",
     "startDate": "Nov, 2017",
     "endDate": "May, 2021",
     "country": "USA",
