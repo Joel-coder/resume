@@ -2,9 +2,11 @@ import React, { useEffect, useState, useContext } from "react";
 //import colors from "./css-colors";
 import FadeInSection from "../../components/FadeInSection";
 import { Context } from "../../Context";
+import resumeInfoJSON from "./resumeInfo.json";
 export default function Resume() {
   const value = useContext(Context);
   const { selectedColour } = value;
+
   const [profileInfo, setProfileInfo] = useState([
     {
       company: "Centennial College",
@@ -14,7 +16,7 @@ export default function Resume() {
       country: "Canada",
       description:
         "As a Front-End developer I worked in 2 different projects from scratch, my main responsibilities were recreate the designs provided using mainly ReactJS and test them using Jest.",
-      technologies: "klk",
+      technologies: "",
     },
     {
       company: "mGage a Vivial Company",
@@ -48,7 +50,7 @@ export default function Resume() {
       technologies: "Technologies",
     },
   ]);
-  const array = [...profileInfo, { company: "0" }];
+  const array = [...resumeInfoJSON, { company: "0" }];
   console.log(array);
   return (
     <>
@@ -60,35 +62,35 @@ export default function Resume() {
 
         <div className={"bg-right"}></div>
         <div className="main-container">
-          {profileInfo.map((profileInfo, index) => (
+          {resumeInfoJSON.map((resumeInfoJSON, index) => (
             <FadeInSection key={index}>
               <div className="box" style={{ backgroundColor: selectedColour }}>
                 <div className="inner-box">
                   <div className="d-flex flex-column justify-content-center align-items-center h-100">
                     <span className="position-title pb-5">
-                      {profileInfo.company}
+                      {resumeInfoJSON.company}
                     </span>
                     <span className="pb-3">
-                      {profileInfo.position}
+                      {resumeInfoJSON.position}
                       <hr className={"line w-100"} />
                     </span>
                     <div className="pb-3">
                       <div className="d-flex flex-row ">
-                        <span> {profileInfo.startDate}</span>
+                        <span> {resumeInfoJSON.startDate}</span>
                         <span className="mx-1">{"-"}</span>
-                        <span> {profileInfo.endDate}</span>
+                        <span> {resumeInfoJSON.endDate}</span>
                       </div>
                       <hr className={"line w-100"} />
                     </div>
                     <span>
-                      {profileInfo.country}
+                      {resumeInfoJSON.country}
                       <hr className={"line w-100"} />
                     </span>
                   </div>
                 </div>
                 <div className="role-description">
                   <p className="pb-2">{"Role description"}</p>
-                  <div>{profileInfo.description}</div>
+                  <div>{resumeInfoJSON.description}</div>
                 </div>
               </div>
             </FadeInSection>
