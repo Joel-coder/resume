@@ -1,4 +1,11 @@
-[
+[    
+    {
+      "Title": "Ads campaigns CRM",
+      "img": "https://www.puregenomics.com/static/media/pg.2c5399c3.png",
+      "Description":
+        "Ecommerce rebrand for a Health supplement manufacturer",
+      "Technologies": "React, Node"
+    },
     {
       "Title": "Ads campaigns CRM",
       "img": "https://media.sproutsocial.com/uploads/2017/11/Social-Media-Ideas.png",

@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache gcompat
 WORKDIR /app
 COPY package-lock.json ./
 COPY package.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Rebuild the source code only when needed
 FROM node:16-alpine AS builder

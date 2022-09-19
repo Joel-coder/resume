@@ -36,7 +36,7 @@ export default function LandingPage() {
             </p>
             <p className="text-left-inner">
               {
-                "I am an Engineer with almost 5 years of experience in the IT industry. In the last 2 years I started focusing more on developing software solutions, and I spent the last year working exclusively with software development. I strive to develop the highest quality software and I am a declarative paradigm enthusiast, because I believe code should describe itself. I value long term results and take ownership of the work that needs to be done. Due to my curious nature, I excel in places where I am constantly learning and improving."
+                "I am an engineer with almost 5 years of experience in the IT industry. In the last 2 years I started focusing more on developing software solutions, and I spent the last year working exclusively with software development. I strive to develop the highest quality by following SOLID principles. I value long term results and take ownership of the work that needs to be done. Due to my curious nature, I excel in places where I am constantly learning and improving."
               }
             </p>
           </div>
