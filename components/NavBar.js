@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useContext } from "react";
-import { useTranslation } from "next-i18next"; // i18n
-import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // i18n
+import React from "react";
+
 import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -28,9 +27,3 @@ export default function NavBar() {
     </Navbar>
   );
 }
-
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["landingPage"])), // page must wait for this translation file to load
-  },
-});

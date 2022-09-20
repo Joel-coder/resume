@@ -46,9 +46,3 @@ export default function ColorPalette() {
     </>
   );
 }
-
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["landingPage"])), // page must wait for this translation file to load
-  },
-});
