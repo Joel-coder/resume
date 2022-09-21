@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://orbbit-dev.cf:3000/api/";
+const BASE_URL = "xxx";
 
 const ApiInstance = () => {
   axios.interceptors.request.use(
