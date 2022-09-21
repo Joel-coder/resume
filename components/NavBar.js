@@ -8,7 +8,7 @@ export default function NavBar() {
   const router = useRouter();
 
   return (
-    <Navbar bg="light" expand="md" className={"nav-bar py-3"}>
+    <Navbar expand="md" className={"nav-bar py-3"}>
       <Container fluid>
         <Navbar.Brand className={"ms-2"}>Joel Vargas</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
