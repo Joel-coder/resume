@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 export default function NavBar() {
   const router = useRouter();
-
+  console.log("render test");
   return (
     <Navbar expand="md" className={"nav-bar py-3"}>
       <Container fluid>

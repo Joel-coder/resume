@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Card from "react-bootstrap/Card";
 import projectsInfoJSON from "./projectsInfo.json";
-import { Context } from "../../Context";
+import { Context } from "../../components/Context";
 //import colors from "./css-colors";
 
 export default function Project() {
@@ -9,15 +9,8 @@ export default function Project() {
   const { selectedColour, setSelectedColour } = value;
   //spread operator to include the elements/objects of the json in a array
   const projectsInfo = [...projectsInfoJSON];
-
   return (
     <>
-      <div
-        className={"bg-left"}
-        style={{ backgroundColor: selectedColour }}
-      ></div>
-
-      <div className={"bg-right"}></div>
       <div className=" ">
         <div className="w-100 h-100 parent-card">
           {projectsInfo.map((info, index) => (

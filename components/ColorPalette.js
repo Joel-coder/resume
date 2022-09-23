@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"; //
 import { useRouter } from "next/router";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { Context } from "../Context";
+import { Context } from "./Context";
 
 export default function ColorPalette() {
   const router = useRouter();

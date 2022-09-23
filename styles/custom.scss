@@ -4,12 +4,6 @@ $primary: #c0484b;
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-/*
-
-
-
-*/
-
 .navbar {
   background-color: white !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -149,9 +143,7 @@ $primary: #c0484b;
     clear: both;
     content: "";
     display: table;
-    //https://www.w3schools.com/css/css_float_clear.asp
   }
-
   li {
     // float: left;
     text-align: center;
@@ -201,7 +193,7 @@ $primary: #c0484b;
   transform: translateY(20vh);
   visibility: hidden;
   transition: opacity 1200ms ease-out, transform 600ms ease-out,
-    visibility 1200ms ease-out;
+  visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
   &.is-visible {
     opacity: 1;

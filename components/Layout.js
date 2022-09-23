@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import NavBar from "../components/NavBar";
-import { Context } from "../Context";
+import React, { useState, useEffect, useRef } from "react";
+import NavBar from "./NavBar";
+import { Context } from "./Context";
 import { useCookies } from "react-cookie";
 
 export default function LayOut({ children }) {
@@ -21,9 +21,7 @@ export default function LayOut({ children }) {
       //sameSite: "none",
       maxAge: 3600,
     });
-    console.log("render test");
   }, [selectedColour]);
-
   return (
     <>
       <Context.Provider
@@ -32,6 +30,12 @@ export default function LayOut({ children }) {
           setSelectedColour: setSelectedColour,
         }}
       >
+        <div
+          className={"bg-left"}
+          style={{ backgroundColor: selectedColour }}
+        ></div>
+
+        <div className={"bg-right"}></div>
         <NavBar />
         {children}
       </Context.Provider>

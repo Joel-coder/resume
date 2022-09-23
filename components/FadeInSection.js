@@ -5,6 +5,8 @@ export default function FadeInSection({ children }) {
   const domRef = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
+      //interface
+      //detect visibility of an element
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
